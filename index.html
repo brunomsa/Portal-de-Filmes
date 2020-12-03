@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Convergence" />
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Club</title>
+</head>
+
+<body>
+
+    <!--Cabeçalho-->
+    <header class="container header">
+
+        <div class="row">
+            <div class="col-12 header_area">
+                <div class="row">
+                    <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 logo_area">
+                        <img src="imgs/logo.png" class="logo">
+                    </div>
+
+                    <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-xl-7 menu_area">
+                        <input type="checkbox" id="menuToggle">
+                        <label for="menuToggle" class="menu-icon">
+                            <i class="fa fa-bars"></i>
+                            <i class="fa fa-times-circle"></i>
+                        </label>
+
+                        <nav class="nav menu">
+                            <input type="checkbox" id="menuToggle">
+                            <a class="nav-link" href="#lancamentos">Lançamentos</a>
+                            <a class="nav-link" href="#destaque">Em destaque</a>
+                            <a class="nav-link" href="#avaliacao">Avaliações</a>
+                            <a class="nav-link" href="#entrevista">Entrevistas & Making Of</a>
+                            <a class="nav-link" href="#novidades">Novidades</a>
+                        </nav>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 pesquisa_area">
+                        <input class="form-control mr-sm-2 caixa-pesquisa" type="search" placeholder="Pesquisar filme"
+                            aria-label="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Conteúdo Principal-->
+    <main class="container main">
+
+        <!--Lançamentos-->
+        <article class="row">
+            <div class="col-12 main2">
+                <div class="row lancamentos">
+                    <h2 class=" col-12 tit1" id="lancamentos">Lançamentos</h2>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row lancamentos ">
+                                    <div class="col-12 col-lg-6 trailer">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item"
+                                                src="https://www.youtube.com/embed/zQEjE_M2Esw"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-12 col-lg-6">
+                                        <div class="row">
+                                            <h3 class="col-12 nome_filme">SONIC - O FILME</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-lg-10 sinopse text-justify">
+                                                <span class="negrito">Sinopse: </span>Sonic, o porco-espinho azul mais
+                                                famoso do mundo, se junta com os seus amigos para derrotar o terrível
+                                                Doutor Eggman, um cientista louco que planeja dominar o mundo, e o
+                                                Doutor Robotnik, responsável por aprisionar animais inocentes em robôs.
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-4 diretor">
+                                                <span class="negrito">Diretor: </span>Jeff Fowler
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-4 roteiro">
+                                                <span class="negrito">Roteiro: </span>Josh Miller
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-4 estreia">
+                                                <span class="negrito">Estreia: </span>2020
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 elenco">
+                                                <span class="negrito">Elenco: </span> <br>
+                                                <ul>
+                                                    <li>Jim Carrey</li>
+                                                    <li>James Marsden</li>
+                                                    <li>Tika Sumpter</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 avaliacao">
+                                                <span class="negrito">Avaliação: </span> <br>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela-nula"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row lancamentos">
+                                    <div class="col-12 col-lg-6 trailer">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item"
+                                                src="https://www.youtube.com/embed/yeegSMOA0fk"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6">
+                                        <div class="row">
+                                            <h3 class="col-12 nome_filme">SCOOBY! O FILME</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 sinopse text-justify">
+                                                <span class="negrito">Sinopse: </span>SCOOBY! O Filme é uma história de
+                                                origem dos famosos personagens da série animada da Hanna Barbera.
+                                                Salsicha e Scooby tem uma conexão instantânea envolvendo comida em seu
+                                                primeiro encontro, e logo se unem aos jovens detetives Fred, Velma e
+                                                Daphne para formar a Mistério S/A. Só que, após resolver centenas de
+                                                casos, eles encontram o desafio de impedir o "apocãolipse", que virá
+                                                quando o fantasma do cão Cerberus for liberado no mundo.
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-4 diretor">
+                                                <span class="negrito">Diretor: </span>Tony Cervone
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-4 roteiro">
+                                                <span class="negrito">Roteiro: </span>Joe Ruby
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-4 estreia">
+                                                <span class="negrito">Estreia: </span>2020
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 elenco">
+                                                <span class="negrito">Elenco: </span> <br>
+                                                <ul>
+                                                    <li>Kiersey Clemons</li>
+                                                    <li>Zac Efron</li>
+                                                    <li>Will Forte</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 avaliacao">
+                                                <span class="negrito">Avaliação: </span> <br>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela-nula"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row lancamentos">
+                                    <div class="col-12 col-lg-6 trailer">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item"
+                                                src="https://www.youtube.com/embed/5dcU51Ad_QE"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6">
+                                        <div class="row">
+                                            <h3 class="col-12 nome_filme">LUTA POR JUSTIÇA</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 sinopse text-justify">
+                                                <span class="negrito ">Sinopse: </span>Em Luta por Justiça, Bryan
+                                                Stevenson (Michael B. Jordan) é um advogado recém-formado em Harvard que
+                                                abre mão de uma carreira lucrativa em escritórios renomados da costa
+                                                leste americana para se mudar para o Alabama e se dedicar a prisioneiros
+                                                condenados à morte que jamais receberam assistência legal justa. Ao
+                                                chegar lá, Bryan se depara com o caso de Walter McMillian (Jamie Foxx),
+                                                um homem negro falsamente acusado de um assassinato, mas que nunca teve
+                                                uma defesa apropriada por conta do preconceito racial na região.
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-4 diretor">
+                                                <span class="negrito">Diretor: </span>Destin Daniel Cretton
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-4 roteiro">
+                                                <span class="negrito">Roteiro: </span>Joe Ruby
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-4 estreia">
+                                                <span class="negrito">Estreia: </span>2020
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 elenco">
+                                                <span class="negrito">Elenco: </span> <br>
+                                                <ul>
+                                                    <li>Michael B. Jordan</li>
+                                                    <li>Jamie Foxx</li>
+                                                    <li>Brie Larson</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 avaliacao">
+                                                <span class="negrito">Avaliação: </span> <br>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela-nula"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row lancamentos">
+                                    <div class="col-12 col-lg-6 trailer">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item"
+                                                src="https://www.youtube.com/embed/iNWUTtYE7UM"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6">
+                                        <div class="row">
+                                            <h3 class="col-12 nome_filme">DOLITTLE</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 sinopse text-justify">
+                                                <span class="negrito">Sinopse: </span>Em Dolittle, o Dr. Dolittle
+                                                (Robert Downey Jr) vive com uma variedade de animais exóticos e
+                                                conversa com eles diariamente. Quando a jovem rainha Victoria
+                                                (Jessie Buckley) fica doente, o excêntrico médico e seus amigos
+                                                peludos embarcam em uma aventura épica em uma ilha mítica para
+                                                encontrar a cura.
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-4 diretor">
+                                                <span class="negrito">Diretor: </span>Stephen Gaghan
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-4 roteiro">
+                                                <span class="negrito">Roteiro: </span>Stephen Gaghan
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-4 estreia">
+                                                <span class="negrito">Estreia: </span>2020
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 elenco">
+                                                <span class="negrito">Elenco: </span> <br>
+                                                <ul>
+                                                    <li>Robert Downey Jr.</li>
+                                                    <li>Antonio Banderas</li>
+                                                    <li>Jessie Buckley</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 avaliacao">
+                                                <span class="negrito">Avaliação: </span> <br>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela"></i>
+                                                <i class="fa fa-star" id="estrela-nula"></i>
+                                                <i class="fa fa-star" id="estrela-nula"></i>
+                                                <i class="fa fa-star" id="estrela-nula"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!--Em Destaque-->
+        <article class="row destaque conteudo-central">
+            <h2 class="col-12 col-md-6 col-lg-6 tit2 " id="destaque">Em destaque</h2>
+
+            <div class="col-7 col-md-6 col-lg-6 dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categoria: TODOS
+                </button>
+                <div class="dropdown-menu">
+                    <button class="dropdown-item" type="button">Aventura</button>
+                    <button class="dropdown-item" type="button">Romance</button>
+                    <button class="dropdown-item" type="button">Comédia</button>
+                    <button class="dropdown-item" type="button">Suspense</button>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-6 col-md-3 col-lg-3">
+                    <div class="banner">
+                        <img src="imgs/banner1.png">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-3">
+                    <div class="banner">
+                        <img src="imgs/banner2.jpg">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-3">
+                    <div class="banner">
+                        <img src="imgs/banner3.jpg">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-3">
+                    <div class="banner">
+                        <img src="imgs/banner4.jpg">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active" id="botao-carregar">
+                            <input type="checkbox" checked> <i class="fa fa-plus"></i> Carregar mais filmes
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!--Avaliações-->
+        <article class="row">
+            <div class="col-12 avaliacao conteudo-central">
+                <h2 class="tit2" id="avaliacao">Últimas avaliações</h2>
+                <div class="row">
+
+                    <div class="col-12 col-lg-6 col-xl-4 card-avaliacao">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-2 foto">
+                                    <img src="imgs/perfil3.jpg">
+                                </div>
+
+                                <div class="col-12 resposta_avaliacao">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5>Léo</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <span class="negrito">Filme: </span>Scooby! O Filme
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 text-justify">
+                                            <p><span class="negrito">Avaliação: </span>Scooby o filme é um filme sobre o
+                                                salsicha e o Scooby! O filme mostra como a turma do Scooby-Doo se
+                                                conheceu A
+                                                cena mais marcante é a do salsicha indo embora spoiler: Scooby e a turma
+                                                são
+                                                atacados pelo vilão da animação corrida maluca: Dick Vigarista e seus
+                                                robôs
+                                                Em
+                                                geral o filme é muito bom!
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-7 avaliacao_individual">
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela-nula2"></i>
+                                            <i class="fa fa-star" id="estrela-nula2"></i>
+                                        </div>
+                                        <div class="col-5 data_avaliacao">
+                                            <span class="negrito">18/08/2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-4 card-avaliacao">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-2 foto">
+                                    <img src="imgs/perfil2.jpg">
+                                </div>
+
+                                <div class="col-12 resposta_avaliacao">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5>Roberto</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <span class="negrito">Filme: </span>Sonic
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 text-justify">
+                                            <p><span class="negrito">Avaliação: </span>É claro, filmes de jogos não são
+                                                feitos especialmente para apenas os fãs mas sim para atrair um novo
+                                                público. Sonic não traz todos os elementos dia jogos mas consegue fazer
+                                                bonitos, com cenas muitos bonitas e emocionantes além de um bom ritmo de
+                                                ação contendo vários easter eggs dos games.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-7 avaliacao_individual">
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                        </div>
+                                        <div class="col-5 data_avaliacao">
+                                            <span class="negrito">25/07/2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-4 card-avaliacao">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-2 foto">
+                                    <img src="imgs/perfil1.jpg">
+                                </div>
+
+                                <div class="col-12 resposta_avaliacao">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5>Adão</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <span class="negrito">Filme: </span>Luta por Justiça
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 text-justify">
+                                            <p><span class="negrito">Avaliação: </span>Filme para chocar! Como a justiça
+                                                para o
+                                                negro (ainda hoje) é completamente ineficaz. chorei litros. muito triste
+                                                vc
+                                                ser
+                                                tratado de outra forma só por ser negro. filme excelente para
+                                                refletir...
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-7 avaliacao_individual">
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela2"></i>
+                                            <i class="fa fa-star" id="estrela-nula2"></i>
+                                        </div>
+                                        <div class="col-5 data_avaliacao">
+                                            <span class="negrito">03/03/2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 conteudo-central">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active" id="botao-carregar">
+                        <input type="checkbox" checked> <i class="fa fa-plus"></i> Ver mais avaliações
+                    </label>
+                </div>
+            </div>
+        </article>
+
+        <!--Entrevistas e Making Of-->
+        <article class="row">
+            <div class="col-12 entrevistas conteudo-central">
+                <h2 class="tit2" id="entrevista">Entrevistas & Making Of</h2>
+
+                <div class="row">
+
+                    <div class="col-12 col-lg-6 col-xl-4">
+                        <div class="card">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tBR3hhxc8kk"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                <h5>Sonic - O Filme</h5>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="negrito">Diretor: </span>Jeff Fowler
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="negrito">Roteiro: </span>Josh Miller
+                                    </div>
+
+                                    <div class="col-12 estreia_filme">
+                                        <span class="negrito">Estreia: </span>2020
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-4">
+                        <div class="card">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6pntg2h0EAg"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                <h5>Aladdin</h5>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="negrito">Diretor: </span>Guy Ritchie
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="negrito">Roteiro: </span>Stephen Gaghan
+                                    </div>
+
+                                    <div class="col-12 estreia_filme">
+                                        <span class="negrito">Estreia: </span>2019
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-4">
+                        <div class="card">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n3adYAu0MsI"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                <h5>Vingadores - Guerra Infinita</h5>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="negrito">Diretor: </span>Joe e Anthony Russo
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <span class="negrito">Roteiro: </span>Christopher Markus
+                                    </div>
+
+                                    <div class="col-12 estreia_filme">
+                                        <span class="negrito">Estreia: </span>2018
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active" id="botao-carregar">
+                                <input type="checkbox" checked> <i class="fa fa-plus"></i> Ver mais
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!--Novidades-->
+        <article class="row conteudo-central">
+
+            <!--Notícias-->
+            <div class="col-12 col-lg-8 novidades">
+                <h2 class=" col-12 tit2" id="novidades">Novidades</h2>
+
+                <div class="row reportagem">
+                    <div class="col-12 col-lg-4">
+                        <img src="imgs/noticia1.jpg" class="foto_noticia">
+                    </div>
+
+                    <div class="col-12 col-lg-8 materia">
+                        <div class="col-12 data_materia">
+                            31 de Agosto de 2020
+                        </div>
+                        <div class="col-12">
+                            <h5>Pantera Negra 2: Tudo o que sabemos sobre o filme da Marvel</h5>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-left">
+                                Produção ainda vai acontecer após a morte de Chadwick Boseman?
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="tags">
+                                <a href="#">pantera negra</a>
+                                <a href="#">hollywood</a>
+                                <a href="#">chadwick</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row reportagem">
+                    <div class="col-12 col-lg-4">
+                        <img src="imgs/noticia2.jpg" class="foto_noticia">
+                    </div>
+
+                    <div class="col-12 col-lg-8 materia">
+                        <div class="col-12 data_materia">
+                            14 de Setembro de 2020
+                        </div>
+                        <div class="col-12">
+                            <h5>Homem Formiga 3 escala ator de Lovecraft Country como vilão</h5>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-left">
+                                Jonathan Majors, ator de Destacamento Blood, vai interpretar o personagem Kang, o
+                                Conquistador.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="tags">
+                                <a href="#">homem formiga</a>
+                                <a href="#">marvel</a>
+                                <a href="#">conquistador</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row reportagem">
+                    <div class="col-12 col-lg-4">
+                        <img src="imgs/noticia3.jpg" class="foto_noticia">
+                    </div>
+
+                    <div class="col-12 col-lg-8 materia">
+                        <div class="col-12 data_materia">
+                            14 de Setembro de 2020
+                        </div>
+                        <div class="col-12">
+                            <h5>Cinemas e teatros do Rio de Janeiro são autorizados a abrir com 50% da capacidade</h5>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-left">
+                                Estabelecimentos podem reabrir a partir desa segunda-feira, dia 14.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="tags">
+                                <a href="#">pandemia</a>
+                                <a href="#">cinema</a>
+                                <a href="#">rio de janeiro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active" id="botao-carregar">
+                            <input type="checkbox" checked> <i class="fa fa-plus"></i> Ver mais
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Info-->
+            <div class="col-12 col-lg-4 info">
+
+                <!--Sobre-->
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="tit2">Sobre</h2>
+                        <p class="text-justify">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero culpa laboriosam
+                            consequatur
+                            totam mollitia et. Quas praesentium veritatis iusto expedita repellat delectus saepe
+                            beatae.
+                            Illum animi repudiandae autem nobis praesentium ratione quaerat mollitia architecto
+                            soluta
+                        </p>
+                    </div>
+                </div>
+                <!--Editorial-->
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="tit3">Editorial</h2>
+
+                        <div class="col-12 pessoas">
+                            <i class="fa fa-user"></i>
+                            <span class="negrito">Redação: </span>Bruno Andrade
+                        </div>
+
+                        <div class="col-12 pessoas">
+                            <i class="fa fa-user"></i>
+                            <span class="negrito">Pesquisa: </span>Bruno Andrade
+                        </div>
+
+                        <div class="col-12 pessoas">
+                            <i class="fa fa-user"></i>
+                            <span class="negrito">Gerente Geral: </span>Bruno Andrade
+                        </div>
+                    </div>
+
+                </div>
+                <!--Redes Sociais-->
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="tit4">redes sociais:</h3>
+                        <div class="row">
+                            <div class="col-12 media-icons">
+                                <a href="https://www.facebook.com/AdoroCinema/" target="blanck"><i
+                                        class="fa fa-facebook-square"></i></a>
+                                <a href="https://twitter.com/adorocinema" target="blanck"><i
+                                        class="fa fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/adorocinema/" target="blanck"><i
+                                        class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!--Rodapé-->
+    <footer class="container footer">
+        <div class="row conteudo-central">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-10 copyright">
+                        <p>Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - <span class="negrito">ICEI
+                                PUC Minas</span>
+                        </p>
+                    </div>
+
+                    <div class="col-2 logo">
+                        <img src="imgs/logo.png" class="logo_rodape">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
